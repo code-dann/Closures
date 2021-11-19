@@ -6,12 +6,11 @@ def decorator(function):
         
     return nestedfunction
 
-
+@decorator
 def greetings():
     print('Hello!')
 
 
 greetings()
 
-sayHi= decorator(greetings)
-sayHi()
+
